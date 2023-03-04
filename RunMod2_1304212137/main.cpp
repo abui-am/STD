@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -72,12 +73,10 @@ void show_summary(Mhs mahasiswa[], int n) {
         }else if(id_prodi == '3'){
            mh++;
         }
-
-        cout << ac << cc << mh;
     }
 
     cout << "IPK terbesar didapatkan oleh " << mahasiswa[iMaks].name << endl;
-    cout << "IPK Rata-rata : " << total / n << endl;
+    cout << "IPK Rata-rata : " << setprecision(2) << fixed << total / n << endl;
     cout << "Program Studi Art of Coffee : " << ac << endl;
     cout << "Program Studi Creative Content : " << cc << endl;
     cout << "Program Studi Mental Health : " << mh << endl;
