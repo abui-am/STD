@@ -11,7 +11,7 @@ struct Mhs {
     int kodeunik;
 };
 
-void show_program_studi(string NIM) {
+void show_program_studi_1304212137(string NIM) {
     char id_prodi = NIM[1];
     if(id_prodi == '1'){
         cout << "Prodi Anda adalah Art of Coffee";
@@ -25,13 +25,13 @@ void show_program_studi(string NIM) {
     cout << endl;
 }
 
-void show_cumlaude_status(float ipk, int semester) {
+void show_cumlaude_status_1304212137(float ipk, int semester) {
     if(semester <= 8 && ipk > 3.5) {
         cout << "CUMLAUDE" << endl;
     }
 }
 
-void show_mahasiswa_berprestasi_status(int kodeunik) {
+void show_mahasiswa_berprestasi_status_1304212137(int kodeunik) {
     bool is_prime = true;
      // 0 and 1 are not prime numbers
       if (kodeunik == 0 || kodeunik == 1) {
@@ -51,7 +51,7 @@ void show_mahasiswa_berprestasi_status(int kodeunik) {
     }
 }
 
-void show_summary(Mhs mahasiswa[], int n) {
+void show_summary_1304212137(Mhs mahasiswa[], int n) {
     int iMaks = 1;
     float total = 0;
     int ac = 0;
@@ -97,20 +97,20 @@ int main()
         cin >> mahasiswa[i].name;
         cout << "NIM : ";
         cin >> mahasiswa[i].NIM;
-        show_program_studi(mahasiswa[i].NIM);
+        show_program_studi_1304212137(mahasiswa[i].NIM);
         cout << "Ipk : ";
         cin >> mahasiswa[i].ipk;
         cout << "Semester : ";
         cin >> mahasiswa[i].semester;
-        show_cumlaude_status(mahasiswa[i].ipk, mahasiswa[i].semester);
+        show_cumlaude_status_1304212137(mahasiswa[i].ipk, mahasiswa[i].semester);
         cout << "Kode unik : ";
         cin >> mahasiswa[i].kodeunik;
-        show_mahasiswa_berprestasi_status(mahasiswa[i].kodeunik);
+        show_mahasiswa_berprestasi_status_1304212137(mahasiswa[i].kodeunik);
         cout << endl;
     }
 
     cout << "..........INPUT DATA SELESAI.............." << endl;
-    show_summary(mahasiswa, n);
+    show_summary_1304212137(mahasiswa, n);
 
     return 0;
 }

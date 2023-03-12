@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1678598352 source:d:\@code\cpp\std\clo1_2\main.cpp
+	<iostream>
+	<iomanip>
+
