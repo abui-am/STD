@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1678969772 source:d:\@code\cpp\std\runmod3_1304212137\main.cpp
+	<iostream>
+	"lemari.cpp"
+
+1678969652 d:\@code\cpp\std\runmod3_1304212137\lemari.h
+
+1678969756 d:\@code\cpp\std\runmod3_1304212137\lemari.cpp
+	<iostream>
+	"lemari.h"
+
