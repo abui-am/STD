@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1679588032 source:d:\@code\cpp\std\rubmod4_1304212137\main.cpp
+	<iostream>
+	"listpasien.cpp"
+	<string>
+
+1679588045 d:\@code\cpp\std\rubmod4_1304212137\listpasien.cpp
+	"singleLL.h"
+
+1679587915 d:\@code\cpp\std\rubmod4_1304212137\singlell.h
+	<iostream>
+	<string>
+
