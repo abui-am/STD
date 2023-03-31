@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1680273506 source:d:\@code\cpp\std\runmod5_1304212137\main.cpp
+	"SLL.cpp"
+
+1680274183 d:\@code\cpp\std\runmod5_1304212137\sll.cpp
+	"SLL.h"
+
+1680271621 d:\@code\cpp\std\runmod5_1304212137\sll.h
+	<stdio.h>
+	<iostream>
+
