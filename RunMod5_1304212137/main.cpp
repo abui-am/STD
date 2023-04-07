@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     List mList;
-    createNewList(mList);
+    createNewList_1304212137(mList);
     int input = 1, NMasakan, NPorsi;
 
     while(input != 0) {
@@ -24,22 +24,22 @@ int main()
         if(input == 1) {
             cout << "Masukan jumlah yang akan ditambahkan: ";
             cin >> NMasakan;
-            addNElementList(mList,NMasakan);
+            addNElementList_1304212137(mList,NMasakan);
             cout << endl;
         } else if(input == 2){
-            showAllFood(mList);
+            showAllFood_1304212137(mList);
         } else if(input == 3){
-            showAvailableFood(mList);
+            showAvailableFood_1304212137(mList);
         } else if(input == 4){
-            showBestSeller(mList);
+            showBestSeller_1304212137(mList);
         } else if(input == 5){
-            deleteAllSoldOut(mList);
+            deleteAllSoldOut_1304212137(mList);
         } else if(input == 6) {
             cout << "Masukan nomor masakan: ";
             cin >> NMasakan;
             cout << "Masukan nomor porsi: ";
             cin >> NPorsi;
-            transaction(mList,NMasakan,NPorsi);
+            transaction_1304212137(mList,NMasakan,NPorsi);
         }
 
         cout << endl;

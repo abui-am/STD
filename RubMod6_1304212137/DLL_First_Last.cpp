@@ -1,13 +1,12 @@
 #include "DLL_First_Last.h"
 
-void buatList(List& L) {
+void buatList_1304212137(List& L) {
     first(L) = NIL;
     last(L) = NIL;
 }
 
 
-void buatElemen(address P, int ID, string judul, string pengarang, int tahun){
-
+void buatElemen_1304212137(address P, int ID, string judul, string pengarang, int tahun){
     info(P).ID = ID;
     info(P).judul = judul;
     info(P).pengarang = pengarang;
@@ -16,7 +15,7 @@ void buatElemen(address P, int ID, string judul, string pengarang, int tahun){
     prev(P) = NIL;
 };
 
-void insertLast(List& L, address P){
+void insertLast_1304212137(List& L, address P){
     if(first(L) == NIL) {
         first(L) = P;
         last(L) = P;
@@ -27,14 +26,14 @@ void insertLast(List& L, address P){
     }
 };
 
-void insertAfter(List& L, address P, address Prec){
+void insertAfter_1304212137(List& L, address P, address Prec){
     next(P) = next(Prec);
     prev(next(P)) = P;
     next(Prec) = P;
     prev(P) = Prec;
 };
 
-void deleteFirst(List& L, address &P){
+void deleteFirst_1304212137(List& L, address &P){
     if(next(first(L)) == NIL) {
         first(L) = NIL;
         last(L) = NIL;
@@ -54,11 +53,11 @@ void deleteAfter(List& L, address P, address Prec){
     prev(P) = NIL;
 };
 
-bool listKosong(List L) {
+bool listKosong_1304212137(List L) {
     return first(L) == NIL;
 };
 
-void lihatList(List L){
+void lihatList_1304212137(List L){
     address P = first(L);
     while (P != NIL) {
         cout << info(P).ID << info(P).judul << info(P).pengarang << info(P).tahun << endl;
@@ -66,8 +65,8 @@ void lihatList(List L){
     }
 };
 
-void insertFirst(List& L, address P){
-  if(listKosong(L)) {
+void insertFirst_1304212137(List& L, address P){
+  if(listKosong_1304212137(L)) {
     first(L) = P;
     last(L) = P;
   } else {
@@ -78,15 +77,15 @@ void insertFirst(List& L, address P){
 };
 
 
-void tambahData(List& L, int ID, string judul, string pengarang, int tahun){
-    address P = new elmList;;
-    buatElemen(P,ID,judul,pengarang,tahun);
-    insertLast(L,P);
+void tambahData_1304212137(List& L, int ID, string judul, string pengarang, int tahun){
+    address P = new elmList;
+    buatElemen_1304212137(P,ID,judul,pengarang,tahun);
+    insertFirst_1304212137(L,P);
 };
 
-void deleteLast(List& L, address P){
+void deleteLast_1304212137(List& L, address P){
     P = last(L);
-    if(next(first(L)) = NIL) {
+    if(next(first(L)) == NIL) {
         first(L) = NIL;
         last(L) = NIL;
     } else {
@@ -96,9 +95,9 @@ void deleteLast(List& L, address P){
     }
 };
 
-bool cariID(List L, int id){
+bool cariID_1304212137(List L, int id){
     address P;
-    while(next(P) != NIL){
+    while(P != NIL){
         if(info(P).ID == id){
             return true;
         }
@@ -107,17 +106,17 @@ bool cariID(List L, int id){
     return false;
 };
 
-void hapusData(List& L, int id){
+void hapusData_1304212137(List& L, int id){
     address P = first(L);
-    if(listKosong(L)) {
+    if(listKosong_1304212137(L)) {
         return;
     } else {
-        while(next(P) != NIL){
+        while(P != NIL){
             if(info(P).ID == id){
                 if(prev(P) == NIL) {
-                    deleteFirst(L,P);
+                    deleteFirst_1304212137(L,P);
                 } else if(next(P) == NIL){
-                    deleteLast(L,P);
+                    deleteLast_1304212137(L,P);
                 } else {
                     deleteAfter(L,P,prev(P));
                 }
@@ -127,7 +126,7 @@ void hapusData(List& L, int id){
     }
 };
 
-int FrekRangeTahun(List L, int t_awal, int t_akhir) {
+int FrekRangeTahun_1304212137(List L, int t_awal, int t_akhir) {
     int count = 0;
     address P = first(L);
 

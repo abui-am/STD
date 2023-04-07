@@ -7,24 +7,24 @@ int main()
     address P;
     address temp;
 
-    // buatList(L);
-    // buatElemen(P,72,"judul","karang1",789);
-    // insertFirst(L,P);
-    // buatElemen(P,1,"judul2","karang2",222);
-    // insertLast (L,P);
-    // buatElemen(P,7,"judul3","karang3",333);
+    // buatList_1304212137(L);
+    // buatElemen_1304212137(P,72,"judul","karang1",789);
+    // insertFirst_1304212137(L,P);
+    // buatElemen_1304212137(P,1,"judul2","karang2",222);
+    // insertLast_1304212137 (L,P);
+    // buatElemen_1304212137(P,7,"judul3","karang3",333);
     // temp = first(L);
-    // insertAfter(L,P,temp);
-    // lihatList(L);
+    // insertAfter_1304212137(L,P,temp);
+    // lihatList_1304212137(L);
 
-    buatList(L);
-    tambahData(L,72," judul ","karang1 ",789);
-    tambahData(L,1," judul2 ","karang2 ",222);
-    tambahData(L,7," judul3 ","karang3 ",333);
-    lihatList(L);
-    cout << "Frekuensi buku antara tahun tertentu " << FrekRangeTahun(L,100,333) << endl;
-    hapusData(L, 72);
-    lihatList(L);
+    buatList_1304212137(L);
+    tambahData_1304212137(L,72," judul ","karang1 ",789);
+    tambahData_1304212137(L,1," judul2 ","karang2 ",222);
+    tambahData_1304212137(L,7," judul3 ","karang3 ",333);
+    lihatList_1304212137(L);
+    cout << "Frekuensi buku antara tahun tertentu " << FrekRangeTahun_1304212137(L,100,333) << endl;
+    hapusData_1304212137(L, 72);
+    lihatList_1304212137(L);
 
     return 0;
 }

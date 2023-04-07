@@ -7,13 +7,12 @@
 #define first(L) ((L).first)
 
 
-
-void createNewList(List &L)
+void createNewList_1304212137(List &L)
 {
     first(L) = NIL;
 };
 
-void insertLast(List &L, address P)
+void insertLast_1304212137(List &L, address P)
 {
     if (first(L) == NIL)
     {
@@ -30,7 +29,7 @@ void insertLast(List &L, address P)
     }
 };
 
-void deleteFirst(List &L, address &P)
+void deleteFirst_1304212137(List &L, address &P)
 {
     P = first(L);
     if (next(first(L)) == NIL)
@@ -44,7 +43,7 @@ void deleteFirst(List &L, address &P)
     next(P) = NIL;
 };
 
-void deleteLast(List &L, address &P)
+void deleteLast_1304212137(List &L, address &P)
 {
     address q = first(L);
     while (next(next(q)) != NIL)
@@ -55,18 +54,18 @@ void deleteLast(List &L, address &P)
     next(q) = NIL;
 };
 
-void deleteAfter(List &L, address prec, address &P)
+void deleteAfter_1304212137(List &L, address prec, address &P)
 {
     P = prec;
     next(prec) = next(P);
     next(P) = NIL;
 };
 
-bool empty_l(List mlist){
+bool empty_1304212137(List mlist){
     return mlist.first == NIL;
 };
 
-infotype newMasakan(int no, string nama){
+infotype newMasakan_1304212137(int no, string nama){
     masakan m;
     m.nama = nama;
     m.nomor = no;
@@ -74,7 +73,7 @@ infotype newMasakan(int no, string nama){
     return m;
 };
 
-address newElement(infotype m){
+address newElement_1304212137(infotype m){
     address newEl = new ElmtMsk;
     newEl->info = m;
     newEl->next = NIL;
@@ -82,7 +81,7 @@ address newElement(infotype m){
     return newEl;
 };
 
-void addNElementList(List& mList, int N){
+void addNElementList_1304212137(List& mList, int N){
     string namaMasakan;
     masakan m;
     int nomor;
@@ -91,12 +90,12 @@ void addNElementList(List& mList, int N){
         cin >> nomor;
         cout << "Masukan nama masakan: ";
         cin >> namaMasakan;
-        m = newMasakan(nomor,namaMasakan);
-        insertLast(mList,newElement(m));
+        m = newMasakan_1304212137(nomor,namaMasakan);
+        insertLast_1304212137(mList,newElement_1304212137(m));
     }
 };
 
-void showAllFood(List mList){
+void showAllFood_1304212137(List mList){
     address M = first(mList);
 
     if(M == NIL) {
@@ -111,7 +110,7 @@ void showAllFood(List mList){
     }
 };
 
-void showAvailableFood(List mList){
+void showAvailableFood_1304212137(List mList){
     address M = first(mList);
     while(M != NIL){
         if(info(M).sisaPorsi > 0) {
@@ -121,7 +120,7 @@ void showAvailableFood(List mList){
     }
 };
 
-address findMinRemaining(List mList){
+address findMinRemaining_1304212137(List mList){
     address minRemaining = mList.first;
     address M = mList.first;
     while(M != NIL){
@@ -133,15 +132,15 @@ address findMinRemaining(List mList){
     return minRemaining;
 };
 
-void showBestSeller(List mList){
-    address bs = findMinRemaining(mList);
+void showBestSeller_1304212137(List mList){
+    address bs = findMinRemaining_1304212137(mList);
     cout << "[Best Seller]" << endl;
     cout << "Nomor :" << info(bs).nomor << endl;
     cout << "Nama :" <<info(bs).nama << endl;
     cout << "Sisa Porsi :" << info(bs).sisaPorsi << endl;
 };
 
-void deleteAllSoldOut(List& mList){
+void deleteAllSoldOut_1304212137(List& mList){
     address M = first(mList);
     address prec;
     address P;
@@ -149,11 +148,11 @@ void deleteAllSoldOut(List& mList){
     while(M != NIL) {
         if(M->info.sisaPorsi <= 0){
             if(i==0) {
-                deleteFirst(mList,P);
+                deleteFirst_1304212137(mList,P);
             } else if(next(M) == NIL) {
-                deleteLast(mList,P);
+                deleteLast_1304212137(mList,P);
             } else{
-                deleteAfter(mList,prec,P);
+                deleteAfter_1304212137(mList,prec,P);
             }
         }
         prec = M;
@@ -163,7 +162,7 @@ void deleteAllSoldOut(List& mList){
 };
 
 
-void transaction(List& mList, int noMasakan, int porsi){
+void transaction_1304212137(List& mList, int noMasakan, int porsi){
     address M = first(mList);
     bool isFound = false;
     while(M != NIL) {

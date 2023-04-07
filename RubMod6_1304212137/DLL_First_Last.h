@@ -35,32 +35,32 @@ struct List {
     address Last;
 };
 
-void buatList(List& L);
+void buatList_1304212137(List& L);
 
-void buatElemen(address P, int ID, string judul, string pengarang, int tahun);
+void buatElemen_1304212137(address P, int ID, string judul, string pengarang, int tahun);
 
-bool listKosong(List L);
+bool listKosong_1304212137(List L);
 
-void insertFirst(List& L, address P);
+void insertFirst_1304212137(List& L, address P);
 
-void insertLast(List& L, address P);
+void insertLast_1304212137(List& L, address P);
 
-void insertAfter(List& L, address P, address Prec);
+void insertAfter_1304212137(List& L, address P, address Prec);
 
-void tambahData(List& L, int ID, string judul, string pengarang, int tahun);
+void tambahData_1304212137(List& L, int ID, string judul, string pengarang, int tahun);
 
-void deleteFirst(List& L, address &P);
+void deleteFirst_1304212137(List& L, address &P);
 
-void deleteLast(List& L, address P);
+void deleteLast_1304212137(List& L, address P);
 
 void deleteAfter(List& L, address P, address Prec);
 
-void hapusData(List& L, int id);
+void hapusData_1304212137(List& L, int id);
 
-void lihatList(List L);
+void lihatList_1304212137(List L);
 
-bool cariID(List L, int id);
+bool cariID_1304212137(List L, int id);
 
-int FrekRangeTahun(List L, int t_awal, int t_akhir);
+int FrekRangeTahun_1304212137(List L, int t_awal, int t_akhir);
 
 #endif // DLL_FIRST_LAST_H_INCLUDED

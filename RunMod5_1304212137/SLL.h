@@ -28,21 +28,21 @@ struct List {
 
 
 
-void createNewList(List& L);
-void insertLast(List &L, address P);
-void deleteFirst(List &L, address &P);
+void createNewList_1304212137(List& L);
+void insertLast_1304212137(List &L, address P);
+void deleteFirst_1304212137(List &L, address &P);
 void deleteLast(List &L, address &P);
 void deleteAfter(List& L, address prec, address& P);
 
-bool empty_l(List mList);
-infotype newMasakan(int no, string nama);
-address newElement(infotype m);
-void addNElementList(List& mList, int N);
-void showAllFood(List mList);
-void showAvailableFood(List mList);
-address findMinRemaining(List mList);
-address findMinRemaining(List mList);
-void showBestSeller(List mList);
-void deleteAllSoldOut(List& mList);
+bool empty_1304212137(List mList);
+infotype newMasakan_1304212137(int no, string nama);
+address newElement_1304212137(infotype m);
+void addNElementList_1304212137(List& mList, int N);
+void showAllFood_1304212137(List mList);
+void showAvailableFood_1304212137(List mList);
+address findMinRemaining_1304212137(List mList);
+address findMinRemaining_1304212137(List mList);
+void showBestSeller_1304212137(List mList);
+void deleteAllSoldOut_1304212137(List& mList);
 
 #endif // SLL_H_INCLUDED
