@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1682957819 source:d:\@code\cpp\std\rubmod9_1304212137\main.cpp
+	"stack.h"
+
+1682948775 d:\@code\cpp\std\rubmod9_1304212137\stack.h
+	<stdio.h>
+	<iostream>
+

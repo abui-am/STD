@@ -7,23 +7,23 @@ int main()
     adrDLL temp;
     int input, minimal = 0;
 
-    createList(L);
+    create_list_1304212137(L);
     cout << "Masukan 3 data:" << endl;
     for(int i = 0; i < 3; i++) {
         cout << i+1 << ". ";
         cin >> input;
-        alokasi(input,temp);
-        insert_last(L,temp);
+        alokasi_1304212137(input,temp);
+        insert_last_1304212137(L,temp);
     }
 
-    show(L);
-    minValue(L,minimal);
+    show_1304212137(L);
+    min_1304212137(L,minimal);
     cout << "Nilai terkecil " << minimal << endl;
 
     for(int i = 0; i < 3; i++) {
-       delete_last(L,temp);
+       delete_last_1304212137(L,temp);
     }
 
-    show(L);
+    show_1304212137(L);
     return 0;
 }

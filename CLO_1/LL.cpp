@@ -1,18 +1,18 @@
 #include "LL.H"
 
-void createList(listDouble& L) {
+void create_list_1304212137(listDouble& L) {
     first(L) = NIL;
     last(L) = NIL;
 }
 
-void alokasi(infotype new_data, adrDLL& x) {
+void alokasi_1304212137(infotype new_data, adrDLL& x) {
      x = new elementDLL;
      info(x) = new_data;
      next(x) = NIL;
      prev(x) = NIL;
 }
 
-void show (listDouble L) {
+void show_1304212137(listDouble L) {
     adrDLL P;
     P = first(L);
     while(P != NIL) {
@@ -21,7 +21,7 @@ void show (listDouble L) {
     }
 }
 
-void insert_last(listDouble& L, adrDLL newAddr){
+void insert_last_1304212137(listDouble& L, adrDLL newAddr){
     if(first(L) == NIL) {
         first(L) = newAddr;
         last(L) = newAddr;
@@ -32,7 +32,7 @@ void insert_last(listDouble& L, adrDLL newAddr){
     }
 };
 
-void delete_last(listDouble& L, adrDLL newAddr){
+void delete_last_1304212137(listDouble& L, adrDLL newAddr){
     newAddr = last(L);
     if(next(first(L)) == NIL) {
         first(L) = NIL;
@@ -44,7 +44,7 @@ void delete_last(listDouble& L, adrDLL newAddr){
     }
 };
 
-int minValue(listDouble& L, infotype& x){
+void min_1304212137(listDouble& L, infotype& x){
     adrDLL P = first(L);
     x = info(P);
     while (P != NIL) {

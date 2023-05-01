@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1681922972 source:d:\@code\cpp\std\rubmod8_1304212137\main.cpp
+	"CSLL.cpp"
+
+1681923211 d:\@code\cpp\std\rubmod8_1304212137\csll.cpp
+	"CSLL.h"
+
+1681922539 d:\@code\cpp\std\rubmod8_1304212137\csll.h
+	<stdio.h>
+	<iostream>
+
