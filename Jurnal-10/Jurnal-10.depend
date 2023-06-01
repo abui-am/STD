@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1683739529 source:d:\@code\cpp\std\jurnal-10\main.cpp
+	"queue.cpp"
+
+1683739614 d:\@code\cpp\std\jurnal-10\queue.cpp
+	"queue.h"
+
+1683737281 d:\@code\cpp\std\jurnal-10\queue.h
+	<iostream>
+	<stdio.h>
+
